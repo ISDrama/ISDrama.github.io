@@ -93,8 +93,8 @@
     <h3>Silent Video Generation Results<a id="Silent-Video" /></h3>
 
     <p style="margin-top: 2em">
-      In this section, we present generated samples of continuous multi-speaker binaural speech with dramatic prosody with silent video input.<br />
-      We input the drama script as content, the prompt audios to specify timbres of different speakers, the silent video (and camera direction) as the pose prompt and scene information, then ISDrama generates the immersive spatial drama.<br />
+      In this section, we present generated samples of continuous multi-speaker binaural speech with dramatic prosody with <span class="bold-text">silent video</span> input.<br/>
+      We input the drama script as content, the prompt audios to specify timbres of different speakers, the silent video (and camera direction) as the pose prompt and scene information, then ISDrama generates the <span class="bold-text">immersive spatial drama</span>.
       <br />
       <!-- You may need to scroll right to see full results.</b> -->
     </p>
@@ -268,9 +268,9 @@
     <h3>Geometric Pose Generation Results<a id="Silent-Video" /></h3>
 
     <p style="margin-top: 2em">
-      In this section, we present generated samples of single binaural speech with dramatic prosody for better comparison with baseline models.
-      We input the drama script as content, the prompt audios to specify timbre, geometric pose (3D position and quaternion orientation) as the pose prompt, and scene information, then ISDrama generates the binaural audio.
-      The actual geometric pose is provided as frame-level sequences, and here we present the textual representation for better understanding.
+      In this section, we present generated samples of <span class="bold-text">single binaural speech</span> with dramatic prosody for better comparison with <span class="bold-text">baseline models</span>.<br/>
+      We input the drama script as content, the prompt audios to specify timbre, <span class="bold-text">geometric pose</span> (3D position and quaternion orientation) as the pose prompt, and scene information, then ISDrama generates the binaural audio.<br/>
+      The actual geometric pose is provided as frame-level sequences, and here we present the video for better understanding.
       <br />
       <!-- You may need to scroll right to see full results.</b> -->
     </p>
@@ -503,8 +503,8 @@
     <h3>Textual Prompt Generation Results<a id="Textual-Prompt" /></h3>
 
     <p style="margin-top: 2em">
-      In this section, we present generated samples of continuous multi-speaker binaural speech with dramatic prosody with textual prompts.<br />
-      We input the drama script as content, the prompt audios to specify timbres of different speakers, textual prompt for each actor's line as the pose prompt, and scene information, then ISDrama generates the immersive spatial drama.<br />
+      In this section, we present generated samples of continuous multi-speaker binaural speech with dramatic prosody with <span class="bold-text">textual prompts</span>.<br/>
+      We input the drama script as content, the prompt audios to specify timbres of different speakers, textual prompt for each actor's line as the pose prompt, and scene information, then ISDrama generates the <span class="bold-text">immersive spatial drama</span>.
       <br />
       <!-- You may need to scroll right to see full results.</b> -->
     </p>
@@ -514,30 +514,7 @@
       </summary>
       <br/>
       <div style="padding-left: 1em; margin-left: 1em;">
-        <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
-          Textual Prompt Input
-        </summary>
-        <br/>
-        <style>
-          .scrollable {
-            max-height: 240px; /* 设置最大高度 */
-            overflow-y: scroll; /* 设置垂直滚动条 */
-          }
-        </style>
-        
-        <style>
-          .bold-text {
-            font-weight: bold;
-          }
-        </style>
-        <div class="scrollable">
-          <span class="bold-text">Speaker 1</span> initially stands still at near back-right, facing front. 
-          Then Speaker 1 walks from near back-right to near back-right slowly, facing front. Then, speaker 1 stops at near back-right, facing front.
-          Then Speaker 1 stands still at near back-right, facing front. After a short time, speaker 1 walks from near back-right to near back-left moderately, facing front. <br/> <br/>
-          <span class="bold-text">Speaker 2</span> sits at near front-right, facing left.
-        </div>
-      
-        <br/>
+
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Prompt Audio Input
         </summary>
@@ -556,7 +533,35 @@
           </audio>
         </div>
         <br/>
+
+        <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
+          Textual Prompt and Script Input
+        </summary>
+        <br/>
+        <style>
+          .scrollable {
+            max-height: 240px; /* 设置最大高度 */
+            overflow-y: scroll; /* 设置垂直滚动条 */
+          }
+        </style>
+
+        <style>
+          .bold-text {
+            font-weight: bold;
+          }
+        </style>
+
+        <br/>
+        <div class="scrollable">
+          <span class="bold-text">Speaker 1</span>(<i>walks from back-right to back-left, with intermittent pauses</i>): 
+          这里没有叫喊的寂静。这里没有寂静的寂静。这里没有死一般的寂静。在这里，通过说话并不产生沉默。这剧本中没有指令要求我们保持沉默。我们说话时不做任何故意的停顿。我们的停顿都是自然的停顿。我们的停顿并不像沉默那样富有说服力。通过沉默我们不会说出任何东西。我们之间的话语并不会出现深渊。我们之间的话语不存在裂缝。你们不可能在句号之间进行阅读。
+          <br/><br/>
+          <span class="bold-text">Speaker 2</span>(<i>sits at front-right</i>): 
+          从我们的脸上，你们读不出任何东西。与之相关，我们的手势不会表达任何东西。在这里，通过沉默表达出来的并不是不可说的东西。
+          <br/>
+        </div>
       
+        <br/>
       
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Generated Binaural Audio
@@ -568,38 +573,15 @@
             Your browser does not support the audio element.
           </audio>
         </div>
-        <br/>
-      
-      
-        <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
-        Drama Script Input
-        </summary>
-        <br/>
-        <style>
-          .scrollable {
-            max-height: 240px; /* 设置最大高度 */
-            overflow-y: scroll; /* 设置垂直滚动条 */
-            border: 1px solid #ccc; /* 添加边框 */
-          }
-        </style>
-        
-        <div class="scrollable">
-          <span class="bold-text">Speaker 1: </span>
-          这里没有叫喊的寂静。这里没有寂静的寂静。这里没有死一般的寂静。在这里，通过说话并不产生沉默。这剧本中没有指令要求我们保持沉默。我们说话时不做任何故意的停顿。我们的停顿都是自然的停顿。我们的停顿并不像沉默那样富有说服力。通过沉默我们不会说出任何东西。我们之间的话语并不会出现深渊。我们之间的话语不存在裂缝。你们不可能在句号之间进行阅读。
-          <br/><br/><span class="bold-text">Speaker 2: </span>
-          从我们的脸上，你们读不出任何东西。与之相关，我们的手势不会表达任何东西。在这里，通过沉默表达出来的并不是不可说的东西。
-          <br/>
-        </div>
       </div>
-    
-      
-      <br/><br/>
+      <br/><br/><br/>
+
       <summary style="font-family: 'SimHei', sans-serif; font-size: 1.5em; font-weight: bold;">
         Demo2: Hiroshima Mon Amour
       </summary>
       <br/>
       <div style="padding-left: 1em; margin-left: 1em;">
-        <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
+        <!-- <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Textual Prompt Input
         </summary>
         <br/>
@@ -625,7 +607,7 @@
           Then, speaker 1 walks from near back-left to near back-left slowly, facing front. Then, speaker 1 stops at near back-left, facing front. 
         </div>
       
-        <br/>
+        <br/> -->
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Prompt Audio Input
         </summary>
@@ -645,22 +627,8 @@
         </div>
         <br/>
       
-      
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
-          Generated Binaural Audio
-        </summary>
-        <br/>
-        <div style="display: flex; justify-content: center;">
-          <audio controls controlslist="nodownload" class="px-1">
-            <source src="data/textual-prompt/Hiroshima_Mon_Amour/Hiroshima_Mon_Amour.wav" type="audio/wav">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-        <br/>
-      
-      
-        <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
-        Drama Script Input
+          Textual Prompt and Script Input
         </summary>
         <br/>
         <style>
@@ -672,19 +640,31 @@
         </style>
         
         <div class="scrollable">
-          <span class="bold-text">Speaker 1: </span>广岛有医院。我怎么能对此避而不见呢？<br/>
+          <span class="bold-text">Speaker 1</span>(<i>stands at front-right and intermittently moves</i>): 广岛有医院。我怎么能对此避而不见呢？<br/>
           <br/>
-          <span class="bold-text">Speaker 2: </span>广岛的哪个博物馆？<br/>
+          <span class="bold-text">Speaker 2</span>(<i>sits at front-left</i>): 广岛的哪个博物馆？<br/>
           <br/>
-          <span class="bold-text">Speaker 1: </span>在广岛，我曾四次去博物馆。我看见一些人在那里徘徊。因为没有别的东西，人们若有所思地在一幅幅画面和一件件复制品之间徘徊；因为没有别的东西，只能在一幅幅照片、一幅幅照片和一件件复制品之间徘徊；因为没有别的东西，只能在解说牌之间徘徊。<br/>
+          <span class="bold-text">Speaker 1</span>(<i>slowly moves from front-right to back-right</i>): 在广岛，我曾四次去博物馆。我看见一些人在那里徘徊。因为没有别的东西，人们若有所思地在一幅幅画面和一件件复制品之间徘徊；因为没有别的东西，只能在一幅幅照片、一幅幅照片和一件件复制品之间徘徊；因为没有别的东西，只能在解说牌之间徘徊。<br/>
           <br/>
-          <span class="bold-text">Speaker 2: </span>你在广岛什么也不曾看见，一无所见。<br/>
+          <span class="bold-text">Speaker 2</span>(<i>sits at front-left</i>): 你在广岛什么也不曾看见，一无所见。<br/>
           <br/>
-          <span class="bold-text">Speaker 1: </span>复制品做得尽可能逼真。影片拍摄得尽可能逼真。那幻景，显而易见的，是那样逼真，以至游客都潸然泪下。人们依然会满不在乎，然而，对此情此景，一个游客除了哭泣，还能做什么呢？不仅仅是哭泣而已，以便忍受所见所闻中的这番惨景。还有，伤心够了走出博物馆，却不至于丧失理智。<br/>
+          <span class="bold-text">Speaker 1</span> (<i>walks from back-right to back-left</i>): 复制品做得尽可能逼真。影片拍摄得尽可能逼真。那幻景，显而易见的，是那样逼真，以至游客都潸然泪下。人们依然会满不在乎，然而，对此情此景，一个游客除了哭泣，还能做什么呢？不仅仅是哭泣而已，以便忍受所见所闻中的这番惨景。还有，伤心够了走出博物馆，却不至于丧失理智。<br/>
 
         </div>
+
+        <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
+          Generated Binaural Audio
+        </summary>
+        <br/>
+        <div style="display: flex; justify-content: center;">
+          <audio controls controlslist="nodownload" class="px-1">
+            <source src="data/textual-prompt/Hiroshima_Mon_Amour/Hiroshima_Mon_Amour.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <br/>
       </div>
-    
+      <br/><br/><br/>
 
     
       
@@ -694,7 +674,7 @@
       </summary>
       <br/>
       <div style="padding-left: 1em; margin-left: 1em;">
-        <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
+        <!-- <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Textual Prompt Input
         </summary>
         <br/>
@@ -721,9 +701,8 @@
           <span class="bold-text">Speaker 2</span> stands still at near back-left, facing front. <br/> <br/>
           <span class="bold-text">Speaker 1</span> sits at near front-left, facing right. <br/> <br/>
           <span class="bold-text">Speaker 2</span> initially stands still at near back-left, facing front. After a short time, speaker 2 walks from near back-left to near back-left quickly, facing front. Then, speaker 2 stops at near back-left, facing front. <br/> <br/>
-        </div>
-      
-        <br/>
+        </div> -->
+
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Prompt Audio Input
         </summary>
@@ -745,19 +724,6 @@
       
       
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
-          Generated Binaural Audio
-        </summary>
-        <br/>
-        <div style="display: flex; justify-content: center;">
-          <audio controls controlslist="nodownload" class="px-1">
-            <source src="data/textual-prompt/Waiting_for_Godot/Waiting_for_Godot.wav" type="audio/wav">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-        <br/>
-      
-      
-        <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
         Drama Script Input
         </summary>
         <br/>
@@ -770,37 +736,50 @@
         </style>
         
         <div class="scrollable">
-          <span class="bold-text">Speaker 1: </span>
+          <span class="bold-text">Speaker 1</span>(<i>(sits at near front-left)</i>)
             你走不远的。
             <br/><br/>
-          <span class="bold-text">Speaker 2: </span>
+          <span class="bold-text">Speaker 2</span>(<i>stands at back-right and intermittently moves</i>): 
             那太糟糕啦，实在太糟糕啦！你说呢，狄狄，是不是实在太糟糕啦？当你想到路上的景色是多么美丽。还有路上的行人是多么善良。你说是不是，狄狄？
             <br/><br/>
-          <span class="bold-text">Speaker 1: </span>
+          <span class="bold-text">Speaker 1</span>: 
             你要冷静些。
             <br/><br/>
-          <span class="bold-text">Speaker 2: </span>
+          <span class="bold-text">Speaker 2</span>(<i>stands at back-right</i>): 
             冷静……所有的上等人都说要冷静。
             <br/><br/>
-          <span class="bold-text">Speaker 1: </span>
+          <span class="bold-text">Speaker 1</span>: 
             别说啦！
             <br/><br/>
-          <span class="bold-text">Speaker 2: </span>
+          <span class="bold-text">Speaker 2</span>(<i>walks from back-right to back-left</i>): 
             有个英国人多喝了点儿酒，走进一家妓院。舅母问他要漂亮的、黑皮肤的还是红头发的。你说下去吧。
             <br/><br/>
-          <span class="bold-text">Speaker 1: </span>
+          <span class="bold-text">Speaker 1</span>: 
             别说啦！
             <br/><br/>
-          <span class="bold-text">Speaker 2: </span>
+          <span class="bold-text">Speaker 2</span>(<i>stands at back-left</i>): 
             你是要跟我说话吗？你有话要跟我说吗？狄狄……
             <br/><br/>
-          <span class="bold-text">Speaker 1: </span>
+          <span class="bold-text">Speaker 1</span>: 
             我没有什么话要跟你说。
             <br/><br/>
-          <span class="bold-text">Speaker 2: </span>
+          <span class="bold-text">Speaker 2</span>(<i>stands at back-left and intermittently moves</i>): 
             你生气了？原谅我。来吧，狄狄。把你的手给我。拥抱我！你一股大蒜臭！
             <br/><br/>
         </div>
+
+        <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
+          Generated Binaural Audio
+        </summary>
+        <br/>
+        <div style="display: flex; justify-content: center;">
+          <audio controls controlslist="nodownload" class="px-1">
+            <source src="data/textual-prompt/Waiting_for_Godot/Waiting_for_Godot.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <br/><br/>
+
       </div>
     
   </div>
